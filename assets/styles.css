@@ -92,8 +92,11 @@ small{font-size:12px; color:var(--muted)}
 /* 9) ACCESSIBILITY QUICK WINS */
 :focus-visible{outline:3px solid var(--brand-600); outline-offset:2px}
 
+/* 10) CUSTOM OVERRIDES */
 .container {
-  padding-left: 2rem;  /* =32px */
-  padding-right: 2rem;
+  max-width: var(--maxw);      /* giữ giới hạn chiều rộng */
+  margin: 0 auto;              /* canh giữa */
+  padding-left: 2rem !important;  /* =32px */
+  padding-right: 2rem !important; /* =32px */
 }
 

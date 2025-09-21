@@ -21,10 +21,15 @@
   .btn-primary { @apply bg-teal-600 text-white hover:bg-teal-700; }
   .btn-outline { @apply border border-teal-600 text-teal-700 hover:bg-teal-50; }
   .section { @apply py-12 md:py-16; }
-  /* Chỉnh container rộng hơn, không bị dính sát trái */
-  .container { @apply max-w-7xl mx-auto px-8 md:px-16; }
-</style>
 
+  /* ✅ Tối ưu container: rộng hơn trên desktop, giữ gọn trên mobile */
+  .container { @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-20 xl:px-28; }
+
+  /* ✅ Màn hình siêu rộng (≥1536px), tăng thêm đệm để không “dính” lề */
+  @media (min-width: 1536px) {
+    .container { padding-left: 7rem !important; padding-right: 7rem !important; }
+  }
+</style>
 </head>
 <body class="antialiased text-gray-800">
   <!-- Top bar -->

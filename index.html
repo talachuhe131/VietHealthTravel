@@ -59,7 +59,7 @@ Chúng tôi cung cấp thông tin độc lập và minh bạch để bạn tự 
     </div>
     
 <!-- HERO SLIDER (right side) -->
-<div class="swiper heroSwiper rounded-3xl overflow-hidden shadow-xl bg-white">
+<div class="swiper heroSwiper rounded-3xl overflow-hidden shadow-xl bg-white h-[320px] md:h-[420px] lg:h-[460px]">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <img src="/assets/img/Handslide.png" alt="Independent medical guidance in Vietnam"
@@ -160,6 +160,21 @@ We do not provide medical treatment or travel services. All decisions remain wit
 </p>  
   </div>
 </footer>
-
+<script>
+  window.addEventListener("load", () => {
+    new Swiper(".heroSwiper", {
+      loop: true,
+      speed: 700,
+      autoplay: {
+        delay: 4000,              // 4 giây
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".heroSwiper .swiper-pagination",
+        clickable: true
+      }
+    });
+  });
+</script>
 </body>
 </html>

@@ -6,7 +6,8 @@
   <title>VietHealth Travel | Bạn đang cân nhắc điều trị tại Việt Nam?
 Chúng tôi giúp bạn hiểu rõ trước khi quyết định </title>
   <meta name="description" content="Chúng tôi là đội ngũ đang làm việc trong hệ thống y tế Việt Nam. Chúng tôi cung cấp thông tin độc lập và minh bạch để bạn tự đưa ra quyết định phù hợp." />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -56,7 +57,19 @@ Chúng tôi cung cấp thông tin độc lập và minh bạch để bạn tự 
         Tư vấn miễn phí
       </a>
     </div>
-    <img src="/assets/img/Heroslide.png" class="rounded-xl shadow-lg">
+    
+<!-- HERO SLIDER (right side) -->
+<div class="swiper heroSwiper rounded-3xl overflow-hidden shadow-xl bg-white">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="/assets/img/Handslide.png" alt="Independent medical guidance in Vietnam"
+           class="w-full h-full object-cover" />
+    </div>
+
+  <!-- Dots -->
+  <div class="swiper-pagination"></div>
+</div>
+
   </div>
 </section>
 

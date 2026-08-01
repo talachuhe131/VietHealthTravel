@@ -1,58 +1,142 @@
 <!doctype html>
-<html lang="vi">
-<head>
-<link rel="canonical" href="https://www.viethealthtravel.com/">  
-<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="vi"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tin tức | VietHealth Travel</title>
-  <meta name="description" content="Tin tức VietHealth Travel – nền tảng hỗ trợ du lịch y tế tại Việt Nam." />
+  <meta name="description" content="Bài viết về chi phí, chuẩn bị và các lựa chọn khám chữa bệnh tại Việt Nam dành cho người nước ngoài và Việt kiều.">
+  <link rel="canonical" href="https://www.viethealthtravel.com/tin-tuc.html"><link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <style>
+    body, button { font-family: "Segoe UI", Arial, sans-serif; }
+    body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    .muted { color: rgba(15,23,42,.70); }
+    .article-body { font-size: 18px; line-height: 1.75; color: #263238; }
+    .article-body h2 { margin: 2.2rem 0 1rem; font-size: 1.75rem; line-height: 1.3; font-weight: 750; color: #0f172a; }
+    .article-body h3 { margin: 1.8rem 0 .8rem; font-size: 1.35rem; line-height: 1.35; font-weight: 700; color: #0f172a; }
+    .article-body p { margin: 0 0 1.15rem; }
+    .article-body ul, .article-body ol { margin: 0 0 1.25rem 1.4rem; }
+    .article-body ul { list-style: disc; }
+    .article-body ol { list-style: decimal; }
+    .article-body li { margin: .45rem 0; padding-left: .25rem; }
+    .article-body blockquote { margin: 1.4rem 0; padding: 1rem 1.2rem; border-left: 4px solid #cbd5e1; background: #f8fafc; border-radius: .4rem; }
+    .article-body blockquote p:last-child { margin-bottom: 0; }
+    .article-body table { width: 100%; margin: 1.5rem 0; border-collapse: collapse; font-size: 16px; }
+    .article-body th, .article-body td { padding: .8rem; border: 1px solid #cbd5e1; text-align: left; vertical-align: top; }
+    .article-body th { background: #f1f5f9; color: #0f172a; }
+    .article-body a { color: #2563eb; text-decoration: underline; overflow-wrap: anywhere; }
+    .lang-btn { color: #0f172a; transition: color .2s ease; }
+    .lang-btn:hover, .lang-btn.active { color: #2563eb; }
+    @media (max-width: 640px) {
+      .article-body { font-size: 17px; }
+      .article-body h2 { font-size: 1.45rem; }
+      .article-body h3 { font-size: 1.2rem; }
+      .article-body table { display: block; overflow-x: auto; }
+    }
+  </style>
 
-<body class="bg-gray-50 text-gray-800">
+  <style>.card{border-radius:18px;background:#fff;box-shadow:0 12px 28px rgba(15,23,42,.08);border:1px solid rgba(15,23,42,.08)}</style>
+</head><body class="bg-slate-50 text-slate-900">
 
-<!-- TOP BAR -->
-<div class="bg-gray-900 text-white text-sm">
-  <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 xl:px-32 py-2 flex justify-between">
-    <div>Hotline: +84 967694603</div>
-    <div>Email: viethealthtravel@gmail.com</div>
-  </div>
-</div>
-<!-- HEADER -->
-<header class="bg-white shadow sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 xl:px-32 py-4 flex justify-between items-center">
-    <a href="/index.html" class="flex items-center gap-3">
-      <img src="/assets/img/logo.png" class="w-10 h-10 object-contain" alt="VietHealth Travel">
-      <span class="font-bold text-xl">VietHealth Travel</span>
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/img/Logo.png" alt="VietHealth Travel" class="w-10 h-10 object-contain">
+      <div><div class="text-lg font-extrabold leading-tight">VietHealth Travel</div><div class="text-xs muted">Vietnam Medical Travel Guidance</div></div>
     </a>
-
-    <nav class="hidden md:flex gap-8 font-medium">
-      <a href="/gioi-thieu.html" class="text-blue-600">Giới thiệu</a>
-      <a href="/tin-tuc.html" class="hover:text-blue-600">Tin tức</a>
-      <a href="/lien-he.html" class="hover:text-blue-600">Liên hệ</a>
-      <a href="/index.html" class="text-sm">VI</a>
-      <span>|</span>
-      <a href="/en/index.html" class="text-sm">EN</a>
+    <div class="flex items-center gap-5 md:gap-8 font-semibold">
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="gioi-thieu.html" class="hover:text-blue-600" data-vi="Giới thiệu" data-en="About">Giới thiệu</a>
+      <a href="tin-tuc.html" class="text-blue-600" data-vi="Tin tức" data-en="News">Tin tức</a>
+      <a href="lien-he.html" class="hover:text-blue-600" data-vi="Liên hệ" data-en="Contact">Liên hệ</a>
     </nav>
-  </div>
-</header>
-
-<main class="max-w-7xl mx-auto px-4 py-20">
-  <div class="max-w-2xl">
-    <h1 class="text-4xl font-extrabold tracking-tight">Tin tức</h1>
-    <p class="mt-4 text-lg text-slate-600">
-      Mục này đang được cập nhật. Bạn quay lại sau nhé.
-    </p>
-
-    <div class="mt-8 flex gap-3">
-      <a href="/index.html"
-         class="inline-flex items-center justify-center rounded-2xl px-5 py-3 font-semibold bg-blue-600 text-white hover:bg-blue-700">
-        Về trang chủ
-      </a>
-      <a href="/lien-he.html"
-         class="inline-flex items-center justify-center rounded-2xl px-5 py-3 font-semibold border border-blue-600 text-blue-700 hover:bg-blue-50">
-        Liên hệ tư vấn
-      </a>
+    <div class="flex items-center gap-3" aria-label="Chọn ngôn ngữ">
+      <button id="btn-vi" class="lang-btn active" type="button" aria-pressed="true">VI</button>
+      <span class="text-slate-300" aria-hidden="true">|</span>
+      <button id="btn-en" class="lang-btn" type="button" aria-pressed="false">EN</button>
+    </div>
     </div>
   </div>
+</header>
+<section class="max-w-7xl mx-auto px-4 pt-10 pb-6">
+  <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight" data-vi="Tin tức" data-en="News">Tin tức</h1>
+  <p class="mt-3 text-lg muted max-w-3xl" data-vi="Thông tin thực tế về chi phí, chuẩn bị và các lựa chọn điều trị tại Việt Nam dành cho người nước ngoài và Việt kiều." data-en="Practical information on costs, preparation and treatment options in Vietnam for international patients and overseas Vietnamese.">Thông tin thực tế về <b>chi phí</b>, <b>chuẩn bị</b> và <b>các lựa chọn điều trị</b> tại Việt Nam dành cho người nước ngoài và Việt kiều.</p>
+</section>
+<main class="max-w-7xl mx-auto px-4 pb-16">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+    <section class="lg:col-span-8"><div class="card p-5">
+      <div class="flex items-end justify-between gap-4"><div><h2 class="text-lg font-extrabold">Bài viết nổi bật</h2><p class="mt-1 text-sm muted">Ba bài hướng dẫn do VietHealth Travel biên soạn.</p></div>
+      <div class="hidden md:flex gap-2"><button class="px-3 py-2 rounded-xl border font-semibold" id="prev">←</button><button class="px-3 py-2 rounded-xl border font-semibold" id="next">→</button></div></div>
+      <div class="mt-4 swiper mainNewsSwiper rounded-2xl overflow-hidden"><div class="swiper-wrapper">
+        <a class="swiper-slide block" href="bai-01-chi-phi-y-te-viet-nam.html" data-tag="cost">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <img src="assets/img/chiphi.png" alt="Chi phí khám chữa bệnh tại Việt Nam: Hướng dẫn thực tế cho Việt kiều" class="w-full h-[220px] md:h-[330px] object-cover">
+            <div class="p-6 bg-white">
+              <h3 class="text-xl font-extrabold leading-snug">Chi phí khám chữa bệnh tại Việt Nam: Hướng dẫn thực tế cho Việt kiều</h3>
+              <p class="mt-3 muted">Hiểu các nhóm chi phí, yếu tố làm thay đổi dự toán và cách chuẩn bị ngân sách trước khi khám hoặc điều trị tại Việt Nam.</p>
+              <div class="mt-4 text-sm font-semibold text-blue-600">Đọc bài →</div>
+            </div>
+          </div>
+        </a>
+        <a class="swiper-slide block" href="bai-02-chuan-bi-kham-chua-benh-viet-nam.html" data-tag="process">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <img src="assets/img/travel.jpg" alt="Người nước ngoài và Việt kiều cần chuẩn bị gì trước khi khám chữa bệnh tại Việt Nam?" class="w-full h-[220px] md:h-[330px] object-cover">
+            <div class="p-6 bg-white">
+              <h3 class="text-xl font-extrabold leading-snug">Người nước ngoài và Việt kiều cần chuẩn bị gì trước khi khám chữa bệnh tại Việt Nam?</h3>
+              <p class="mt-3 muted">Checklist thực tế về hồ sơ y tế, chi phí, bảo hiểm, visa, thuốc, lưu trú và kế hoạch theo dõi sau điều trị.</p>
+              <div class="mt-4 text-sm font-semibold text-blue-600">Đọc bài →</div>
+            </div>
+          </div>
+        </a>
+        <a class="swiper-slide block" href="bai-03-dieu-tri-pho-bien-tai-viet-nam.html" data-tag="treatment">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <img src="assets/img/Heroslide.webp" alt="Những nhóm điều trị thường được người nước ngoài và Việt kiều cân nhắc tại Việt Nam" class="w-full h-[220px] md:h-[330px] object-cover">
+            <div class="p-6 bg-white">
+              <h3 class="text-xl font-extrabold leading-snug">Những nhóm điều trị thường được người nước ngoài và Việt kiều cân nhắc tại Việt Nam</h3>
+              <p class="mt-3 muted">Nha khoa, ngoại khoa, tuyến giáp, ung bướu, cơ xương khớp, mắt và hỗ trợ sinh sản, kèm các ví dụ thực tế.</p>
+              <div class="mt-4 text-sm font-semibold text-blue-600">Đọc bài →</div>
+            </div>
+          </div>
+        </a></div><div class="swiper-pagination"></div></div>
+    </div></section>
+    <aside class="lg:col-span-4"><div class="card p-5"><h2 class="text-lg font-extrabold">Tất cả bài viết</h2><div class="mt-3 divide-y">
+        <a class="block py-4 hover:text-blue-600" href="bai-01-chi-phi-y-te-viet-nam.html" data-tag="cost">
+          <div class="font-bold">Chi phí khám chữa bệnh tại Việt Nam: Hướng dẫn thực tế cho Việt kiều</div>
+          <div class="text-sm muted mt-1">VietHealth Travel</div>
+        </a>
+        <a class="block py-4 hover:text-blue-600" href="bai-02-chuan-bi-kham-chua-benh-viet-nam.html" data-tag="process">
+          <div class="font-bold">Người nước ngoài và Việt kiều cần chuẩn bị gì trước khi khám chữa bệnh tại Việt Nam?</div>
+          <div class="text-sm muted mt-1">VietHealth Travel</div>
+        </a>
+        <a class="block py-4 hover:text-blue-600" href="bai-03-dieu-tri-pho-bien-tai-viet-nam.html" data-tag="treatment">
+          <div class="font-bold">Những nhóm điều trị thường được người nước ngoài và Việt kiều cân nhắc tại Việt Nam</div>
+          <div class="text-sm muted mt-1">VietHealth Travel</div>
+        </a></div></div>
+      <div class="card p-5 mt-6"><h2 class="text-lg font-extrabold">Cần hỗ trợ?</h2><p class="mt-2 text-sm muted">Gửi nhu cầu khám chữa bệnh để được hỗ trợ chuẩn bị thông tin và định hướng bước tiếp theo.</p><a href="lien-he.html" class="inline-block mt-4 px-4 py-2 rounded-xl bg-blue-600 text-white font-semibold">Liên hệ</a></div>
+    </aside>
+  </div>
 </main>
+
+<footer class="border-t bg-white mt-14">
+  <div class="max-w-5xl mx-auto px-4 py-8 text-sm muted">© <span id="year"></span> VietHealth Travel — Nền tảng thông tin. Chúng tôi không cung cấp dịch vụ y tế.</div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script>
+  const swiper = new Swiper('.mainNewsSwiper', {loop:true,speed:700,autoplay:{delay:4000,disableOnInteraction:false},pagination:{el:'.swiper-pagination',clickable:true}});
+  document.getElementById('prev').addEventListener('click',()=>swiper.slidePrev());
+  document.getElementById('next').addEventListener('click',()=>swiper.slideNext());
+  const languageButtons = { vi: document.getElementById('btn-vi'), en: document.getElementById('btn-en') };
+  function setLanguage(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-vi][data-en]').forEach(el => { el.textContent = el.dataset[lang]; });
+    Object.entries(languageButtons).forEach(([code, button]) => {
+      const active = code === lang;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+  }
+  languageButtons.vi.addEventListener('click', () => setLanguage('vi'));
+  languageButtons.en.addEventListener('click', () => setLanguage('en'));
+</script></body></html>

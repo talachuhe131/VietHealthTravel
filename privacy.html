@@ -6,34 +6,40 @@
   <title>Privacy Policy | VietHealth Travel</title>
   <meta name="description" content="VietHealth Travel privacy policy and information about how personal data is collected, used and protected.">
   <link rel="canonical" href="https://www.viethealthtravel.com/privacy.html">
+  <link rel="icon" href="/favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family: "Segoe UI", Arial, sans-serif; }
-    .lang-btn { transition: color .2s ease; }
-    .lang-btn.active { color: #2563eb; }
+    html, body { min-height: 100%; }
+    body, button { font-family: "Segoe UI", Arial, sans-serif; }
+    body { min-height: 100vh; display: flex; flex-direction: column; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    main { flex: 1 0 auto; }
+    footer { margin-top: auto; }
+    .muted { color: rgba(15,23,42,.70); }
+    .lang-btn { color: #0f172a; transition: color .2s ease; }
+    .lang-btn:hover, .lang-btn.active { color: #2563eb; }
   </style>
 </head>
 
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-800">
-  <div class="bg-slate-900 text-white text-sm">
+<body class="bg-slate-50 text-slate-900">
+  <div class="bg-slate-900 text-white text-xs">
     <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between gap-4">
       <div>Email: viethealthtravel@gmail.com</div>
-      <div class="hidden sm:block" data-en="Vietnam-based Independent Guidance" data-vi="Nền tảng tư vấn độc lập tại Việt Nam">Vietnam-based Independent Guidance</div>
+      <div data-en="Independent Guidance" data-vi="Định hướng độc lập">Independent Guidance</div>
     </div>
   </div>
 
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b shadow-sm">
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b">
     <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="/index.html" class="flex items-center gap-3">
-        <img src="/assets/img/logo.png" alt="VietHealth Travel" class="w-10 h-10 object-contain">
-        <span class="text-xl font-bold">VietHealth Travel</span>
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/img/logo.png" alt="VietHealth Travel" class="w-10 h-10 object-contain">
+        <div><div class="text-lg font-extrabold leading-tight">VietHealth Travel</div><div class="text-xs muted">Vietnam Medical Travel Guidance</div></div>
       </a>
 
       <div class="flex items-center gap-5 md:gap-8 font-semibold">
         <nav class="hidden md:flex items-center gap-8">
-          <a href="/gioi-thieu.html" class="hover:text-blue-600" data-en="About" data-vi="Giới thiệu">About</a>
-          <a href="/tin-tuc.html" class="hover:text-blue-600" data-en="News" data-vi="Tin tức">News</a>
-          <a href="/lien-he.html" class="hover:text-blue-600" data-en="Contact" data-vi="Liên hệ">Contact</a>
+          <a href="gioi-thieu.html" class="hover:text-blue-600" data-en="About" data-vi="Giới thiệu">About</a>
+          <a href="tin-tuc.html" class="hover:text-blue-600" data-en="News" data-vi="Tin tức">News</a>
+          <a href="lien-he.html" class="hover:text-blue-600" data-en="Contact" data-vi="Liên hệ">Contact</a>
         </nav>
         <div class="flex items-center gap-3 text-sm" aria-label="Language selection">
           <button id="lang-vi" class="lang-btn hover:text-blue-600" type="button" aria-pressed="false">VI</button>
@@ -44,17 +50,18 @@
     </div>
   </header>
 
-  <main class="flex-1">
-    <article class="max-w-7xl mx-auto px-4 py-14 md:py-20">
-      <div class="max-w-4xl">
-        <p class="text-sm font-semibold uppercase tracking-wider text-blue-600" data-en="Legal" data-vi="Pháp lý">Legal</p>
-        <h1 class="mt-2 text-4xl md:text-5xl font-extrabold tracking-tight" data-en="Privacy Policy" data-vi="Chính sách quyền riêng tư">Privacy Policy</h1>
-        <p class="mt-7 text-lg leading-8 text-slate-700" data-en="VietHealth Travel is committed to protecting your personal information. This policy explains how we collect, use and safeguard your data." data-vi="VietHealth Travel cam kết bảo vệ thông tin cá nhân của bạn. Chính sách này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ dữ liệu của bạn.">VietHealth Travel is committed to protecting your personal information. This policy explains how we collect, use and safeguard your data.</p>
+  <main class="w-full">
+    <section class="max-w-5xl mx-auto px-4 py-12 md:py-16">
+      <div class="text-center max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight" data-en="Privacy Policy" data-vi="Chính sách quyền riêng tư">Privacy Policy</h1>
+        <p class="mt-4 text-lg muted" data-en="VietHealth Travel is committed to protecting your personal information. This policy explains how we collect, use and safeguard your data." data-vi="VietHealth Travel cam kết bảo vệ thông tin cá nhân của bạn. Chính sách này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ dữ liệu của bạn.">VietHealth Travel is committed to protecting your personal information. This policy explains how we collect, use and safeguard your data.</p>
+      </div>
 
-        <div class="mt-12 space-y-11 text-lg leading-8">
+      <article class="mt-10 bg-white border rounded-2xl shadow-sm p-7 md:p-10 text-[17px] leading-7">
+        <div class="space-y-8 muted">
           <section>
-            <h2 class="text-2xl font-bold" data-en="1. Information We Collect" data-vi="1. Thông tin chúng tôi thu thập">1. Information We Collect</h2>
-            <ul class="mt-4 list-disc pl-7 space-y-2">
+            <h2 class="text-2xl font-bold text-slate-900" data-en="1. Information We Collect" data-vi="1. Thông tin chúng tôi thu thập">1. Information We Collect</h2>
+            <ul class="mt-3 list-disc pl-7 space-y-2">
               <li data-en="Name and contact information (email and phone number, if provided)" data-vi="Họ tên và thông tin liên hệ (email và số điện thoại, nếu được cung cấp)">Name and contact information (email and phone number, if provided)</li>
               <li data-en="General medical context voluntarily shared for guidance purposes" data-vi="Thông tin tổng quan về tình trạng y tế do bạn tự nguyện chia sẻ nhằm mục đích được hướng dẫn">General medical context voluntarily shared for guidance purposes</li>
               <li data-en="Non-sensitive documents you choose to provide" data-vi="Các tài liệu không nhạy cảm mà bạn chủ động cung cấp">Non-sensitive documents you choose to provide</li>
@@ -62,8 +69,8 @@
           </section>
 
           <section>
-            <h2 class="text-2xl font-bold" data-en="2. How We Use Your Information" data-vi="2. Cách chúng tôi sử dụng thông tin">2. How We Use Your Information</h2>
-            <ul class="mt-4 list-disc pl-7 space-y-2">
+            <h2 class="text-2xl font-bold text-slate-900" data-en="2. How We Use Your Information" data-vi="2. Cách chúng tôi sử dụng thông tin">2. How We Use Your Information</h2>
+            <ul class="mt-3 list-disc pl-7 space-y-2">
               <li data-en="To respond to your inquiry" data-vi="Phản hồi yêu cầu của bạn">To respond to your inquiry</li>
               <li data-en="To provide independent healthcare guidance" data-vi="Cung cấp thông tin và hướng dẫn y tế độc lập">To provide independent healthcare guidance</li>
               <li data-en="To improve our information resources" data-vi="Cải thiện các nguồn thông tin của chúng tôi">To improve our information resources</li>
@@ -71,36 +78,35 @@
           </section>
 
           <section>
-            <h2 class="text-2xl font-bold" data-en="3. Data Sharing" data-vi="3. Chia sẻ dữ liệu">3. Data Sharing</h2>
-            <p class="mt-4" data-en="We do not sell or rent your personal data. We only share information when you request or authorize us to do so, when it is necessary to respond to your inquiry, or when required by law. VietHealth Travel does not represent hospitals and does not receive commissions." data-vi="Chúng tôi không bán hoặc cho thuê dữ liệu cá nhân của bạn. Thông tin chỉ được chia sẻ khi bạn yêu cầu hoặc cho phép, khi cần thiết để phản hồi yêu cầu của bạn, hoặc theo quy định pháp luật. VietHealth Travel không đại diện cho bệnh viện và không nhận hoa hồng.">We do not sell or rent your personal data. We only share information when you request or authorize us to do so, when it is necessary to respond to your inquiry, or when required by law. VietHealth Travel does not represent hospitals and does not receive commissions.</p>
+            <h2 class="text-2xl font-bold text-slate-900" data-en="3. Data Sharing" data-vi="3. Chia sẻ dữ liệu">3. Data Sharing</h2>
+            <p class="mt-3" data-en="We do not sell or rent your personal data. We only share information when you request or authorize us to do so, when it is necessary to respond to your inquiry, or when required by law. VietHealth Travel does not represent hospitals and does not receive commissions." data-vi="Chúng tôi không bán hoặc cho thuê dữ liệu cá nhân của bạn. Thông tin chỉ được chia sẻ khi bạn yêu cầu hoặc cho phép, khi cần thiết để phản hồi yêu cầu của bạn, hoặc theo quy định pháp luật. VietHealth Travel không đại diện cho bệnh viện và không nhận hoa hồng.">We do not sell or rent your personal data. We only share information when you request or authorize us to do so, when it is necessary to respond to your inquiry, or when required by law. VietHealth Travel does not represent hospitals and does not receive commissions.</p>
           </section>
 
           <section>
-            <h2 class="text-2xl font-bold" data-en="4. Data Security" data-vi="4. Bảo mật dữ liệu">4. Data Security</h2>
-            <p class="mt-4" data-en="Information is stored using secure platforms, such as email and online form services. We take reasonable measures to prevent unauthorized access, loss or misuse." data-vi="Thông tin được lưu trữ trên các nền tảng có biện pháp bảo mật, chẳng hạn như dịch vụ email và biểu mẫu trực tuyến. Chúng tôi áp dụng các biện pháp hợp lý để ngăn chặn việc truy cập trái phép, thất thoát hoặc sử dụng sai mục đích.">Information is stored using secure platforms, such as email and online form services. We take reasonable measures to prevent unauthorized access, loss or misuse.</p>
+            <h2 class="text-2xl font-bold text-slate-900" data-en="4. Data Security" data-vi="4. Bảo mật dữ liệu">4. Data Security</h2>
+            <p class="mt-3" data-en="Information is stored using secure platforms, such as email and online form services. We take reasonable measures to prevent unauthorized access, loss or misuse." data-vi="Thông tin được lưu trữ trên các nền tảng có biện pháp bảo mật, chẳng hạn như dịch vụ email và biểu mẫu trực tuyến. Chúng tôi áp dụng các biện pháp hợp lý để ngăn chặn việc truy cập trái phép, thất thoát hoặc sử dụng sai mục đích.">Information is stored using secure platforms, such as email and online form services. We take reasonable measures to prevent unauthorized access, loss or misuse.</p>
           </section>
 
           <section>
-            <h2 class="text-2xl font-bold" data-en="5. Your Rights" data-vi="5. Quyền của bạn">5. Your Rights</h2>
-            <p class="mt-4" data-en="You may request access to, correction of or deletion of your information at any time by contacting viethealthtravel@gmail.com." data-vi="Bạn có thể yêu cầu truy cập, chỉnh sửa hoặc xóa thông tin của mình bất kỳ lúc nào bằng cách liên hệ viethealthtravel@gmail.com.">You may request access to, correction of or deletion of your information at any time by contacting viethealthtravel@gmail.com.</p>
+            <h2 class="text-2xl font-bold text-slate-900" data-en="5. Your Rights" data-vi="5. Quyền của bạn">5. Your Rights</h2>
+            <p class="mt-3" data-en="You may request access to, correction of or deletion of your information at any time by contacting viethealthtravel@gmail.com." data-vi="Bạn có thể yêu cầu truy cập, chỉnh sửa hoặc xóa thông tin của mình bất kỳ lúc nào bằng cách liên hệ viethealthtravel@gmail.com.">You may request access to, correction of or deletion of your information at any time by contacting viethealthtravel@gmail.com.</p>
           </section>
 
           <section>
-            <h2 class="text-2xl font-bold" data-en="6. Medical Disclaimer" data-vi="6. Tuyên bố miễn trừ trách nhiệm y tế">6. Medical Disclaimer</h2>
-            <p class="mt-4" data-en="VietHealth Travel provides independent information and guidance only. We do not provide medical diagnosis or treatment. All healthcare decisions must be made by the patient together with licensed healthcare professionals." data-vi="VietHealth Travel chỉ cung cấp thông tin và hướng dẫn độc lập. Chúng tôi không thực hiện chẩn đoán hoặc điều trị y tế. Mọi quyết định chăm sóc sức khỏe phải do người bệnh cùng các nhân viên y tế có giấy phép hành nghề đưa ra.">VietHealth Travel provides independent information and guidance only. We do not provide medical diagnosis or treatment. All healthcare decisions must be made by the patient together with licensed healthcare professionals.</p>
+            <h2 class="text-2xl font-bold text-slate-900" data-en="6. Medical Disclaimer" data-vi="6. Tuyên bố miễn trừ trách nhiệm y tế">6. Medical Disclaimer</h2>
+            <p class="mt-3" data-en="VietHealth Travel provides independent information and guidance only. We do not provide medical diagnosis or treatment. All healthcare decisions must be made by the patient together with licensed healthcare professionals." data-vi="VietHealth Travel chỉ cung cấp thông tin và hướng dẫn độc lập. Chúng tôi không thực hiện chẩn đoán hoặc điều trị y tế. Mọi quyết định chăm sóc sức khỏe phải do người bệnh cùng các nhân viên y tế có giấy phép hành nghề đưa ra.">VietHealth Travel provides independent information and guidance only. We do not provide medical diagnosis or treatment. All healthcare decisions must be made by the patient together with licensed healthcare professionals.</p>
           </section>
         </div>
 
-        <p class="mt-14 text-sm text-slate-500" data-en="Last updated: August 2026" data-vi="Cập nhật lần cuối: Tháng 8 năm 2026">Last updated: August 2026</p>
-      </div>
-    </article>
+        <p class="mt-10 text-sm text-slate-500" data-en="Last updated: August 2026" data-vi="Cập nhật lần cuối: Tháng 8 năm 2026">Last updated: August 2026</p>
+      </article>
+    </section>
   </main>
 
-  <footer class="bg-slate-900 text-white py-10">
-    <div class="max-w-7xl mx-auto px-4 text-center text-sm">
-      <p class="font-medium" data-en="VietHealth Travel – Independent Healthcare Guidance Platform" data-vi="VietHealth Travel – Nền tảng hướng dẫn y tế độc lập">VietHealth Travel – Independent Healthcare Guidance Platform</p>
-      <p class="mt-3 max-w-3xl mx-auto text-xs leading-6 text-slate-400" data-en="We provide independent healthcare information and guidance only. We do not provide medical diagnosis, treatment, hospital representation or travel services. All medical decisions remain with the patient and their licensed healthcare providers." data-vi="Chúng tôi chỉ cung cấp thông tin và hướng dẫn y tế độc lập. Chúng tôi không thực hiện chẩn đoán, điều trị, đại diện bệnh viện hoặc cung cấp dịch vụ du lịch. Mọi quyết định y tế thuộc về người bệnh và các nhân viên y tế có giấy phép hành nghề.">We provide independent healthcare information and guidance only. We do not provide medical diagnosis, treatment, hospital representation or travel services. All medical decisions remain with the patient and their licensed healthcare providers.</p>
-      <span class="inline-block mt-4 text-xs text-white" data-en="Privacy Policy" data-vi="Chính sách quyền riêng tư">Privacy Policy</span>
+  <footer class="bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 py-8 text-center">
+      <div class="text-sm font-semibold" data-en="VietHealth Travel – Independent guidance platform" data-vi="VietHealth Travel – Nền tảng định hướng độc lập">VietHealth Travel – Independent guidance platform</div>
+      <div class="mt-2 text-xs text-slate-400">© <span id="year"></span> VietHealth Travel — <span data-en="Content is for information and guidance only. We do not provide diagnosis or treatment and do not represent any hospital." data-vi="Nội dung chỉ mang tính thông tin/định hướng. Chúng tôi không cung cấp chẩn đoán hay điều trị và không đại diện bệnh viện.">Content is for information and guidance only. We do not provide diagnosis or treatment and do not represent any hospital.</span></div>
     </div>
   </footer>
 
@@ -133,6 +139,7 @@
 
     document.getElementById("lang-vi").addEventListener("click", () => setLanguage("vi"));
     document.getElementById("lang-en").addEventListener("click", () => setLanguage("en"));
+    document.getElementById("year").textContent = new Date().getFullYear();
     setLanguage(localStorage.getItem("vht-language") || "en");
   </script>
 </body>

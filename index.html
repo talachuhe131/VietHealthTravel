@@ -50,13 +50,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
 
 <!-- TOP BAR -->
 <div class="bg-gray-900 text-white text-sm">
   <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 xl:px-32 py-2 flex justify-between">
     <div>Email: viethealthtravel@gmail.com</div>
-    <div>Vietnam-based Independent Guidance</div>
+    <div data-en="Vietnam-based Independent Guidance" data-vi="Nền tảng tư vấn độc lập tại Việt Nam">Vietnam-based Independent Guidance</div>
   </div>
 </div>
 
@@ -65,41 +65,43 @@
   <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 xl:px-32 py-4 flex justify-between items-center">
 
     <a href="/" class="flex items-center gap-3">
-      <img src="/assets/img/logo.png" class="w-10 h-10 object-contain">
+      <img src="/assets/img/Logo.png" alt="VietHealth Travel" class="w-10 h-10 object-contain">
       <span class="font-bold text-xl">VietHealth Travel</span>
     </a>
 
-    <nav class="hidden md:flex gap-8 font-medium">
-      <a href="/gioi-thieu.html" class="hover:text-blue-600">About</a>
-      <a href="/tin-tuc.html" class="hover:text-blue-600">Insights</a>
-      <a href="/lien-he.html" class="hover:text-blue-600">Contact</a>
-      <a href="/privacy.html" class="nav-link">Privacy</a>
-    </nav>
+    <div class="flex items-center gap-5 md:gap-8">
+      <nav class="hidden md:flex gap-8 font-medium">
+        <a href="/gioi-thieu.html" class="hover:text-blue-600" data-en="About" data-vi="Giới thiệu">About</a>
+        <a href="/tin-tuc.html" class="hover:text-blue-600" data-en="Insights" data-vi="Tin tức">Insights</a>
+        <a href="/lien-he.html" class="hover:text-blue-600" data-en="Contact" data-vi="Liên hệ">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2 text-sm font-semibold" aria-label="Language selection">
+        <button type="button" id="lang-vi" class="hover:text-blue-600 transition" aria-label="Đọc bằng tiếng Việt">VI</button>
+        <span class="text-gray-300">|</span>
+        <button type="button" id="lang-en" class="hover:text-blue-600 transition text-blue-600" aria-label="Read in English">EN</button>
+      </div>
+    </div>
 
   </div>
 </header>
 
+<main class="flex-1">
 <!-- HERO -->
 <section class="bg-white py-20">
   <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 xl:px-32 grid md:grid-cols-2 gap-12 items-center">
 
     <div>
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6" data-en="Independent Healthcare Guidance in Vietnam" data-vi="Hướng dẫn y tế độc lập tại Việt Nam">
         Independent Healthcare Guidance in Vietnam
       </h1>
 
-      <p class="text-gray-600 mb-8 text-lg leading-relaxed">
-        We provide independent, non-commercial healthcare guidance 
-        for overseas Vietnamese and international patients 
-        considering medical treatment in Vietnam.
-        <br><br>
-        Understand hospital systems, cost structures and practical pathways 
-        before making important healthcare decisions.
+      <p class="text-gray-600 mb-8 text-lg leading-relaxed" data-en="We provide independent, non-commercial healthcare guidance for overseas Vietnamese and international patients considering medical treatment in Vietnam.<br><br>Understand hospital systems, cost structures and practical pathways before making important healthcare decisions." data-vi="Chúng tôi cung cấp thông tin và hướng dẫn y tế độc lập, không mang tính thương mại cho người Việt Nam ở nước ngoài và bệnh nhân quốc tế đang cân nhắc khám, chữa bệnh tại Việt Nam.<br><br>Tìm hiểu hệ thống bệnh viện, cấu trúc chi phí và quy trình thực tế trước khi đưa ra những quyết định y tế quan trọng.">
+        We provide independent, non-commercial healthcare guidance for overseas Vietnamese and international patients considering medical treatment in Vietnam.<br><br>Understand hospital systems, cost structures and practical pathways before making important healthcare decisions.
       </p>
 
       <a href="/lien-he.html"
          class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-        Request Independent Guidance
+        <span data-en="Request Independent Guidance" data-vi="Yêu cầu tư vấn độc lập">Request Independent Guidance</span>
       </a>
     </div>
 
@@ -108,15 +110,15 @@
       <div class="swiper-wrapper h-full">
 
         <div class="swiper-slide h-full">
-          <img src="/assets/img/Heroslide.png" class="w-full h-full object-cover" />
+          <img src="/assets/img/Heroslide.png" alt="Independent healthcare guidance in Vietnam" data-alt-en="Independent healthcare guidance in Vietnam" data-alt-vi="Hướng dẫn y tế độc lập tại Việt Nam" class="w-full h-full object-cover" />
         </div>
 
         <div class="swiper-slide h-full">
-          <img src="/assets/img/Handslide.png" class="w-full h-full object-cover" />
+          <img src="/assets/img/Handslide.png" alt="Support for patients considering treatment in Vietnam" data-alt-en="Support for patients considering treatment in Vietnam" data-alt-vi="Hỗ trợ người bệnh cân nhắc điều trị tại Việt Nam" class="w-full h-full object-cover" />
         </div>
 
         <div class="swiper-slide h-full">
-          <img src="/assets/img/Costslide.png" class="w-full h-full object-cover" />
+          <img src="/assets/img/Costslide.png" alt="Understanding healthcare costs in Vietnam" data-alt-en="Understanding healthcare costs in Vietnam" data-alt-vi="Tìm hiểu chi phí y tế tại Việt Nam" class="w-full h-full object-cover" />
         </div>
 
       </div>
@@ -129,31 +131,31 @@
 <!-- APPROACH -->
 <section class="py-20">
   <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 xl:px-32">
-    <h2 class="text-3xl font-bold mb-12 text-center">
+    <h2 class="text-3xl font-bold mb-12 text-center" data-en="Our Independent Approach" data-vi="Phương pháp tiếp cận độc lập">
       Our Independent Approach
     </h2>
 
     <div class="grid md:grid-cols-3 gap-10">
 
       <div class="bg-white p-8 rounded-xl shadow">
-        <h3 class="font-semibold mb-3">Independent Perspective</h3>
-        <p class="text-gray-600 text-sm">
+        <h3 class="font-semibold mb-3" data-en="Independent Perspective" data-vi="Góc nhìn độc lập">Independent Perspective</h3>
+        <p class="text-gray-600 text-sm" data-en="We do not represent hospitals and do not receive commissions. Our role is to clarify options so patients can decide independently." data-vi="Chúng tôi không đại diện cho bệnh viện và không nhận hoa hồng. Vai trò của chúng tôi là làm rõ các lựa chọn để người bệnh có thể tự đưa ra quyết định.">
           We do not represent hospitals and do not receive commissions.
           Our role is to clarify options so patients can decide independently.
         </p>
       </div>
 
       <div class="bg-white p-8 rounded-xl shadow">
-        <h3 class="font-semibold mb-3">System-Level Insight</h3>
-        <p class="text-gray-600 text-sm">
+        <h3 class="font-semibold mb-3" data-en="System-Level Insight" data-vi="Hiểu biết về hệ thống">System-Level Insight</h3>
+        <p class="text-gray-600 text-sm" data-en="With experience within Vietnam’s healthcare ecosystem, we explain how processes and pricing structures actually work." data-vi="Với kinh nghiệm trong hệ sinh thái y tế Việt Nam, chúng tôi giải thích cách các quy trình và cấu trúc giá thực sự vận hành.">
           With experience within Vietnam’s healthcare ecosystem,
           we explain how processes and pricing structures actually work.
         </p>
       </div>
 
       <div class="bg-white p-8 rounded-xl shadow">
-        <h3 class="font-semibold mb-3">Patient-Centered Guidance</h3>
-        <p class="text-gray-600 text-sm">
+        <h3 class="font-semibold mb-3" data-en="Patient-Centered Guidance" data-vi="Hướng dẫn lấy người bệnh làm trung tâm">Patient-Centered Guidance</h3>
+        <p class="text-gray-600 text-sm" data-en="We support informed decision-making. All medical choices remain with you and your licensed providers." data-vi="Chúng tôi hỗ trợ người bệnh đưa ra quyết định dựa trên thông tin đầy đủ. Mọi lựa chọn y tế vẫn thuộc về người bệnh và các nhân viên y tế có giấy phép hành nghề.">
           We support informed decision-making.
           All medical choices remain with you and your licensed providers.
         </p>
@@ -167,23 +169,23 @@
 <section class="py-20 bg-gray-100">
   <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 xl:px-32 text-center">
 
-    <h2 class="text-3xl font-bold mb-14">How It Works</h2>
+    <h2 class="text-3xl font-bold mb-14" data-en="How It Works" data-vi="Quy trình hoạt động">How It Works</h2>
 
     <div class="grid md:grid-cols-3 gap-10">
 
       <div class="bg-white rounded-2xl shadow p-8">
         <div class="text-2xl font-bold mb-3">01</div>
-        <p>Initial email consultation and clarification of needs.</p>
+        <p data-en="Initial email consultation and clarification of needs." data-vi="Trao đổi ban đầu qua email và làm rõ nhu cầu.">Initial email consultation and clarification of needs.</p>
       </div>
 
       <div class="bg-white rounded-2xl shadow p-8">
         <div class="text-2xl font-bold mb-3">02</div>
-        <p>Structured overview of hospital options and cost pathways.</p>
+        <p data-en="Structured overview of hospital options and cost pathways." data-vi="Cung cấp thông tin có hệ thống về lựa chọn bệnh viện và các phương án chi phí.">Structured overview of hospital options and cost pathways.</p>
       </div>
 
       <div class="bg-white rounded-2xl shadow p-8">
         <div class="text-2xl font-bold mb-3">03</div>
-        <p>Independent evaluation support before final decisions.</p>
+        <p data-en="Independent evaluation support before final decisions." data-vi="Hỗ trợ đánh giá độc lập trước khi đưa ra quyết định cuối cùng.">Independent evaluation support before final decisions.</p>
       </div>
 
     </div>
@@ -194,41 +196,75 @@
 <section class="py-20">
   <div class="max-w-4xl mx-auto text-center px-6">
     <a href="/lien-he.html" class="inline-block">
-      <h2 class="text-3xl font-bold text-blue-600 mb-4 hover:underline">
+      <h2 class="text-3xl font-bold text-blue-600 mb-4 hover:underline" data-en="Contact for Independent Guidance" data-vi="Liên hệ để được tư vấn độc lập">
         Contact for Independent Guidance
       </h2>
     </a>
 
-    <p class="text-gray-600 mb-6">
+    <p class="text-gray-600 mb-6" data-en="We typically respond within 24 hours." data-vi="Chúng tôi thường phản hồi trong vòng 24 giờ.">
       We typically respond within 24 hours.
     </p>
 
     <a href="/lien-he.html"
        class="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-      Go to Contact Page
+      <span data-en="Go to Contact Page" data-vi="Đến trang Liên hệ">Go to Contact Page</span>
     </a>
   </div>
 </section>
+</main>
 
 <!-- FOOTER -->
 <footer class="bg-gray-900 text-white py-10">
   <div class="max-w-7xl mx-auto px-6 text-center text-sm">
 
-    <p class="font-medium">
+    <p class="font-medium" data-en="VietHealth Travel – Independent Healthcare Guidance Platform" data-vi="VietHealth Travel – Nền tảng hướng dẫn y tế độc lập">
       VietHealth Travel – Independent Healthcare Guidance Platform
     </p>
 
-    <p class="text-xs text-gray-400 mt-3 max-w-3xl mx-auto">
+    <p class="text-xs text-gray-400 mt-3 max-w-3xl mx-auto" data-en="We provide independent healthcare information and guidance only. We do not provide medical diagnosis, treatment, hospital representation, or travel services. All medical decisions remain solely with the patient and their licensed healthcare providers." data-vi="Chúng tôi chỉ cung cấp thông tin và hướng dẫn y tế độc lập. Chúng tôi không thực hiện chẩn đoán, điều trị, đại diện bệnh viện hoặc cung cấp dịch vụ du lịch. Mọi quyết định y tế hoàn toàn thuộc về người bệnh và các nhân viên y tế có giấy phép hành nghề.">
       We provide independent healthcare information and guidance only.
       We do not provide medical diagnosis, treatment, hospital representation,
       or travel services. All medical decisions remain solely with the patient
       and their licensed healthcare providers.
     </p>
 
+    <a href="/privacy.html" class="inline-block mt-4 text-xs text-gray-400 hover:text-white underline underline-offset-4" data-en="Privacy Policy" data-vi="Chính sách quyền riêng tư">Privacy Policy</a>
+
   </div>
 </footer>
 
 <script>
+  const translations = {
+    en: {
+      title: "Independent Medical Guidance in Vietnam | VietHealth Travel",
+      description: "Independent healthcare guidance in Vietnam for overseas Vietnamese and international patients. Understand hospital options, cost structures and treatment pathways before making decisions."
+    },
+    vi: {
+      title: "Hướng dẫn y tế độc lập tại Việt Nam | VietHealth Travel",
+      description: "Thông tin và hướng dẫn y tế độc lập cho người Việt Nam ở nước ngoài và bệnh nhân quốc tế đang cân nhắc khám, chữa bệnh tại Việt Nam."
+    }
+  };
+
+  function setLanguage(lang) {
+    const selected = lang === "vi" ? "vi" : "en";
+    document.documentElement.lang = selected;
+    document.querySelectorAll("[data-en][data-vi]").forEach((element) => {
+      element.innerHTML = element.dataset[selected];
+    });
+    document.querySelectorAll("[data-alt-en][data-alt-vi]").forEach((image) => {
+      image.alt = image.dataset[`alt${selected === "vi" ? "Vi" : "En"}`];
+    });
+    document.title = translations[selected].title;
+    document.querySelector('meta[name="description"]').content = translations[selected].description;
+    document.getElementById("lang-vi").classList.toggle("text-blue-600", selected === "vi");
+    document.getElementById("lang-en").classList.toggle("text-blue-600", selected === "en");
+    localStorage.setItem("vht-language", selected);
+  }
+
+  document.getElementById("lang-vi").addEventListener("click", () => setLanguage("vi"));
+  document.getElementById("lang-en").addEventListener("click", () => setLanguage("en"));
+  setLanguage(localStorage.getItem("vht-language") || "en");
+
   window.addEventListener("load", () => {
     new Swiper(".heroSwiper", {
       loop: true,

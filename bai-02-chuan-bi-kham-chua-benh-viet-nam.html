@@ -46,10 +46,10 @@
 <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b">
   <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
     <a href="index.html" class="flex items-center gap-3">
-      <img src="assets/img/Logo.png" alt="VietHealth Travel" class="w-10 h-10 object-contain">
-      <div><div class="text-lg font-extrabold leading-tight">VietHealth Travel</div><div class="text-xs muted">Vietnam Medical Travel Guidance</div></div>
+      <img src="assets/img/logo.png" alt="VietHealth Travel" class="w-10 h-10 object-contain">
+      <div><div class="text-base sm:text-lg font-extrabold leading-tight">VietHealth Travel</div><div class="hidden sm:block text-xs muted">Vietnam Medical Travel Guidance</div></div>
     </a>
-    <div class="flex items-center gap-5 md:gap-8 font-semibold">
+    <div class="flex items-center gap-4 md:gap-8 font-semibold">
     <nav class="hidden md:flex items-center gap-8">
       <a href="gioi-thieu.html" class="hover:text-blue-600">Giới thiệu</a>
       <a href="tin-tuc.html" class="text-blue-600">Tin tức</a>
@@ -60,8 +60,10 @@
       <span class="text-slate-300" aria-hidden="true">|</span>
       <button id="btn-en" class="lang-btn" type="button" aria-pressed="false">EN</button>
     </div>
+    <button id="mobile-menu-button" class="md:hidden w-10 h-10 inline-flex items-center justify-center rounded-lg border border-slate-300 hover:bg-slate-50" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Mở menu"><span class="text-2xl leading-none" aria-hidden="true">☰</span></button>
     </div>
   </div>
+  <nav id="mobile-menu" class="hidden md:hidden border-t bg-white px-4 py-3" aria-label="Điều hướng trên điện thoại"><div class="max-w-7xl mx-auto flex flex-col font-semibold"><a href="gioi-thieu.html" class="py-3 hover:text-blue-600">Giới thiệu</a><a href="tin-tuc.html" class="py-3 border-t text-blue-600">Tin tức</a><a href="lien-he.html" class="py-3 border-t hover:text-blue-600">Liên hệ</a></div></nav>
 </header>
 <main class="max-w-5xl mx-auto px-4 py-10 md:py-14">
   <a href="tin-tuc.html" class="text-blue-600 font-semibold hover:underline">← Trở lại Tin tức</a>
@@ -575,5 +577,9 @@ relevant authority before making a decision.</p>
   }
   bvi.addEventListener('click', () => setLanguage('vi'));
   ben.addEventListener('click', () => setLanguage('en'));
+  const mobileMenuButton=document.getElementById('mobile-menu-button'),mobileMenu=document.getElementById('mobile-menu');
+  mobileMenuButton.addEventListener('click',()=>{const open=!mobileMenu.classList.toggle('hidden');mobileMenuButton.setAttribute('aria-expanded',String(open));mobileMenuButton.setAttribute('aria-label',open?'Đóng menu':'Mở menu');});
+  mobileMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{mobileMenu.classList.add('hidden');mobileMenuButton.setAttribute('aria-expanded','false');}));
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'){mobileMenu.classList.add('hidden');mobileMenuButton.setAttribute('aria-expanded','false');}});
 </script>
 </body></html>

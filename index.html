@@ -56,20 +56,20 @@
 <div class="bg-gray-900 text-white text-sm">
   <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between">
     <div>Email: viethealthtravel@gmail.com</div>
-    <div data-en="Vietnam-based Independent Guidance" data-vi="Nền tảng tư vấn độc lập tại Việt Nam">Vietnam-based Independent Guidance</div>
+    <div class="hidden sm:block" data-en="Vietnam-based Independent Guidance" data-vi="Nền tảng tư vấn độc lập tại Việt Nam">Vietnam-based Independent Guidance</div>
   </div>
 </div>
 
 <!-- HEADER -->
 <header class="bg-white shadow sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center gap-3">
 
-    <a href="/" class="flex items-center gap-3">
+    <a href="/" class="flex items-center gap-2 sm:gap-3 min-w-0">
       <img src="/assets/img/logo.png" alt="VietHealth Travel" class="w-10 h-10 object-contain">
-      <span class="font-bold text-xl">VietHealth Travel</span>
+      <span class="font-bold text-lg sm:text-xl whitespace-nowrap">VietHealth Travel</span>
     </a>
 
-    <div class="flex items-center gap-5 md:gap-8">
+    <div class="flex items-center gap-3 md:gap-8">
       <nav class="hidden md:flex gap-8 font-medium">
         <a href="/gioi-thieu.html" class="hover:text-blue-600" data-en="About" data-vi="Giới thiệu">About</a>
         <a id="news-nav" href="/tin-tuc.html" class="hover:text-blue-600" data-en="News" data-vi="Tin tức">News</a>
@@ -80,9 +80,19 @@
         <span class="text-gray-300">|</span>
         <button type="button" id="lang-en" class="hover:text-blue-600 transition text-blue-600" aria-label="Read in English">EN</button>
       </div>
+      <button id="mobile-menu-button" class="md:hidden w-10 h-10 shrink-0 inline-flex items-center justify-center rounded-lg border border-gray-300 hover:bg-gray-50" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Mở menu">
+        <span class="text-2xl leading-none" aria-hidden="true">☰</span>
+      </button>
     </div>
 
   </div>
+  <nav id="mobile-menu" class="hidden md:hidden border-t bg-white px-4 py-3" aria-label="Điều hướng trên điện thoại">
+    <div class="max-w-7xl mx-auto flex flex-col font-semibold">
+      <a href="/gioi-thieu.html" class="py-3 hover:text-blue-600" data-en="About" data-vi="Giới thiệu">About</a>
+      <a href="/tin-tuc.html" class="py-3 border-t hover:text-blue-600" data-en="News" data-vi="Tin tức">News</a>
+      <a href="/lien-he.html" class="py-3 border-t hover:text-blue-600" data-en="Contact" data-vi="Liên hệ">Contact</a>
+    </div>
+  </nav>
 </header>
 
 <main class="flex-1">
@@ -264,6 +274,25 @@
   document.getElementById("lang-vi").addEventListener("click", () => setLanguage("vi"));
   document.getElementById("lang-en").addEventListener("click", () => setLanguage("en"));
   setLanguage(localStorage.getItem("vht-language") || "en");
+
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  mobileMenuButton.addEventListener("click", () => {
+    const open = mobileMenu.classList.toggle("hidden") === false;
+    mobileMenuButton.setAttribute("aria-expanded", String(open));
+    mobileMenuButton.setAttribute("aria-label", open ? "Đóng menu" : "Mở menu");
+  });
+  mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+    mobileMenuButton.setAttribute("aria-expanded", "false");
+  }));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      mobileMenu.classList.add("hidden");
+      mobileMenuButton.setAttribute("aria-expanded", "false");
+      mobileMenuButton.focus();
+    }
+  });
 
   window.addEventListener("load", () => {
     new Swiper(".heroSwiper", {
